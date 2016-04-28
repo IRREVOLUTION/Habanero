@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habanero - Login</title>
+  <meta charset=“UTF-8” />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/login.js" type="text/javascript"> </script>
+</head>
+
+
+<body>
+  <div id= "title">
+    <center><img id="logo" src="img/habanero_logo.jpg" alt="Logo" height="300" width="300"></center>
+  </div>  
+    <center><div id="divmenu">
+      <ul id="menu">
+        <li id="tab6"class="selected">Login</li>
+       </ul>
+   </div></center>
+ </br>
+ <div id="tabcontent">
+  <div id = "loginDiv">
+  <form onsubmit="return validateLog();">
+    <fieldset id = "loginForm">
+      <h3>Log In</h3>
+      <p>Nombre de Usuario:</p>
+      <input id="nameA" type="text" name="UserB" class = "formElement"/><span id="errornameA"></span>
+      </br>
+      <p>Contrase&ntilde;a: </p>
+      <input id="passA" type="password" name = "PassB" class = "formElement" /><span id="errorpassA"></span>
+      </br></br>
+      <input id="rem" type="checkbox" name="rem" value="R"/> Recu&eacute;rdame
+      </br>
+      </br>
+      <input type="submit" value="Log In" id = "btn1"/>
+     </fieldset>
+    </form>
+  </div>
+
+  <div id = "regDiv">
+   <form onsubmit="return registerUser();">
+    <fieldset id="regField">
+      <h3>Registrate</h3>
+      <p>Nombre: </p>
+      <input id="fName" type="text" class = "formElement"/><span id="errorfName"></span>
+      </br>
+      <p>Nombre de Usuario: </p>
+      <input id="usrn" type="text" class = "formElement" /><span id="erroru"></span>
+      </br>
+      <p>E-mail: </p>
+      <input id="mail" type="text" class = "formElement" /><span id="errormail"></span>
+      </br>
+      <p>N&uacute;mero Telef&oacute;nico: </p>
+      <input id="telnum" type="text" class = "formElement" /><span id="errorn"></span>
+      </br>
+      <p>Contrase&ntilde;a: </p>
+      <input id="pass1" type="password" class = "formElement" /><span id="errorpass"></span>
+      </br>
+      <p>Confirmar Contrase&ntilde;a: </p>
+      <input id="pass2" type="password" class = "formElement" /><span id="errorp"></span>
+      </br>
+      </br>
+      <label>Colonia: </label><span id="errorcol="></span></br>
+      <select id = "colonia">
+        <option value = "1"> Select a Country</option>
+        <option value = "2"> Country</option>
+        <option value = "3"> Las Primaveras</option>
+        <option value = "4"> Etc</option>
+        <option value = "5"> etc3</option>
+      </select>
+      </br>
+      <p>Calle y N&uacute;mero: </p>
+      <input id="address" type="text" class = "formElement" /><span id="errordir="></span>
+      </br>
+      </br>
+      <input id="regButton" type="submit" value="Submit"/>
+     </fieldset>
+    </form> 
+  </div>
+</div>
+</body>
+
+</html>
+
