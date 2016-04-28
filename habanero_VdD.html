@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habanero - Menu</title>
+  <meta charset=“UTF-8” />
+  <link rel="stylesheet" type="text/css" href="css/styles2.css">
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/AdminV.js" type="text/javascript"> </script>
+  <style>
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+</head>
+
+<body>
+	<div id= "title">
+		<center><img id="logo" src="img/habanero_logo.jpg" alt="Logo" height="300" width="300"></center>
+	</div>	
+    <center><div id="divmenu">
+      <ul id="menu">
+        <li id="tab1">Home</li>
+        <li id="tab2">Ordenes</li>
+        <li id="tab3">Inventario</li>
+        <li id="tab4"class="selected">Ventas del Dia</li>
+        <li id="tab5">Logout</li>
+      </ul>
+  </div></center>
+  </br>
+  </br>
+  <div id="tabcontent">
+      <div id="content-tab1" class="active VdD">
+          <fieldset id="Vent">
+            <table id = "VT" style="color:black" border="1" >
+            </table>
+          </fieldset>
+      </div>
+  </div>
+</body>
+</html>

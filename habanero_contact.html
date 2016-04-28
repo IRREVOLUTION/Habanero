@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habanero - Menu</title>
+  <meta charset=“UTF-8” />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/contact.js" type="text/javascript"> </script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"async defer></script> 
+  <style>
+      #map {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+</head>
+
+<body>
+	<div id= "title">
+		<center><img id="logo" src="img/habanero_logo.jpg" alt="Logo" height="300" width="300"></center>
+	</div>	
+    <center><div id="divmenu">
+      <ul id="menu">
+        <li id="tab1">Home</li>
+        <li id="tab2">Men&uacute;</li>
+        <li id="tab3">Ordenar</li>
+        <li id="tab4">Separar Mesa</li>
+        <li id="tab5"class="selected">Cont&aacute;ctanos</li>
+        <li id="tab6">Logout</li>
+       </ul>
+   </div></center>
+ </br>
+ </br>
+     <div id="tabcontent">
+      <div id="content-tab1" class="active Menu">
+          <h1> &iexcl;Cont&aacute;ctanos! </h1>
+          <h3> Llamanos al 81-4040-9777 y al 4040-977 </h3>
+          <h3> Nuestra Direcci&oacute;n: Paseo de las Americas 2501 </h3>
+          <h3> Horas de Operaci&oacute;n: Martes a Domingos de 6:00 p.m. a 12:00 a.m.</h3>
+          <h3><a href="https://www.facebook.com/habanero.monterrey/">Facebook</a></h3> 
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var mapDiv = document.getElementById('map');
+              var myLatLng = {lat: 25.641306, lng: -100.267878};
+              var mapOptions = {
+                center: myLatLng,
+                zoom: 16
+              };
+              var map = new google.maps.Map(mapDiv,mapOptions);
+              var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Habanero'
+              });
+            }
+          </script>
+      </div>
+    </div>
+
+</body>
+
+</html>
+

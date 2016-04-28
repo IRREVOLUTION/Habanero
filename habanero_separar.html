@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habanero - Separar Mesa</title>
+  <meta charset=“UTF-8” />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/separar.js" type="text/javascript"> </script>
+</head>
+
+<body>
+	<div id= "title">
+		<center><img id="logo" src="img/habanero_logo.jpg" alt="Logo" height="300" width="300"></center>
+	</div>	
+    <center><div id="divmenu">
+      <ul id="menu">
+        <li id="tab1">Home</li>
+        <li id="tab2">Men&uacute;</li>
+        <li id="tab3">Ordenar</li>
+        <li id="tab4" class="selected">Separar Mesa</li>
+        <li id="tab5">Cont&aacute;ctanos</li>
+        <li id="tab6">Logout</li>
+       </ul>
+   </div></center>
+ </br>
+ </br>
+     <div id="tabcontent">
+      <div id="content-tab1" class="active Menu">
+          
+        <div id="dispM"></div>
+
+          <form onsubmit="return registerTable();">
+            <fieldset id="regField">
+              <h3>Separa una Mesa</h3>
+              <p>D&iacute;a (dia/mes/a&ntilde;o)</p>
+              <input id="date" type="text" class = "formElement" />
+              </br>
+              <p>Hora (hh:mm)</p>
+              <input id="time" type="text" class = "formElement" />
+              <p>N&uacute;mero de Personas: </p>
+              <select id = "numPer">
+                <option value = "1"> 1</option>
+                <option value = "2"> 2</option>
+                <option value = "3"> 3</option>
+                <option value = "4"> 4</option>
+                <option value = "5"> 5</option>
+              </select>
+              </br></br>
+              <input id="tableButton" type="submit" value="Submit"/>
+            </fieldset>
+          </form> 
+      </div>
+    </div>
+
+</body>
+
+</html>
+
