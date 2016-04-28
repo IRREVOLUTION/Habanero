@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<comida>
+	<dish>
+		<name img="img/papa.jpg" precio="$80.00" cat="taco"> Orden de Tacos al Carbon </name>
+		<desc> 5 tacos</desc>
+	</dish>
+	<dish>
+		<name img="img/papa.jpg" precio="$90.00" cat="plato"> Papa con Carne Asada </name>
+		<desc> Una papa con carne asada</desc>
+	</dish>
+	<dish>
+		<name img="img/tostada.jpg" precio="$60.00" cat="plato"> Orden de Tostadas </name>
+		<desc> 2 tostadas</desc>
+	</dish>
+	<dish>
+		<name img="img/ham.jpg" precio="$80.00" cat="plato"> Hamburgesa al Carbon </name>
+		<desc> Hamburguesa con papas</desc>
+	</dish>
+	<dish>
+		<name img="img/pirata.jpg" precio="$80.00" cat="taco"> Pirata con Carne Asada </name>
+		<desc> Pirata con carne y aguacate</desc>
+	</dish>
+	<dish>
+		<name img="img/salEspecial.jpg" precio="$55.00" cat="entrada"> Salchicha Especial con Queso </name>
+		<desc> Salchicha de asador entre dos tortillas</desc>
+	</dish>
+	<dish>
+		<name img="img/queso.jpg" precio="$55.00" cat="entrada"> Queso Flameado </name>
+		<desc> Queso flameado con chorizo</desc>
+	</dish>
+</comida>
